@@ -5,10 +5,8 @@ import { Outlet } from "react-router-dom";
 const AppLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header>
-        <Header />
-      </header>
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8">
+        <Header />
         <Outlet />
       </main>
       <footer className="p-10 bg-gray-800 flex items-center justify-center">
