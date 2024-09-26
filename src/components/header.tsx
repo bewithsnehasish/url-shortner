@@ -16,14 +16,16 @@ export default function Header() {
   const user = false;
 
   return (
-    <nav className="flex items-center justify-between py-4">
+    <nav className="flex items-center justify-between p-8">
       <Link to="/">
         <img src="/logo.png" alt="logo" className="h-16 rounded-full" />
       </Link>
 
       <div>
         {!user ? (
-          <Button onClick={() => navigate("/auth")}> Login</Button>
+          <Button onClick={() => navigate("/auth")} className="font-bold">
+            Login
+          </Button>
         ) : (
           <DropdownMenu>
             <DropdownMenuTrigger className="w-10 rounded-full overflow-hidden">
