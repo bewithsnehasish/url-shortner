@@ -1,0 +1,5 @@
+import supabase from "./supabase";
+
+export async function longin(email, password) {
+  await supabase.auth.signInWithPassword({ email, password });
+}
