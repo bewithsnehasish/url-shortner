@@ -1,7 +1,6 @@
 const Error = ({ message }: { message: string }) => {
   return (
-    <div className="text-sm text-red-500 p-4 bg-red-100 rounded-lg">
-      <h1>Error</h1>
+    <div className="text-sm text-red-500 p-2 rounded-lg">
       <p>{message}</p>
     </div>
   );
